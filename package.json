@@ -1,0 +1,48 @@
+{
+  "name": "express-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc -p .",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:e2e": "jest --detectOpenHandles --config ./test/jest-e2e.json",
+    "test:e2e:cov": "jest --detectOpenHandles --coverage --config ./test/jest-e2e.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.16",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.11.18",
+    "@types/supertest": "^2.0.12",
+    "jest": "^29.4.0",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "__tests__",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
