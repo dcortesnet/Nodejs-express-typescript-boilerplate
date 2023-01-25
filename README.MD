@@ -5,14 +5,14 @@ Estandarización base de un proyecto con Nodejs express y Typescript. El objetiv
 ## Instalación
 
 ```bash
-$ npm install
+> npm install
 ```
 
 ## Docker
 
 ```bash
-$ docker build -t api .
-$ docker run -d -p 3000:3000 api
+> docker build -t api .
+> docker run -d -p 3000:3000 api
 ```
 
 ## Desarrollo
